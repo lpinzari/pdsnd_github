@@ -88,6 +88,17 @@ MIT
 
 ### Credits
 
+These are the blogs post that inspired me for this project:
+
+* Stackoverflow:
+
+ 1. [python-function-to-convert-seconds-into-minutes-hours-and-days](https://stackoverflow.com/questions/4048651/python-function-to-convert-seconds-into-minutes-hours-and-days/4048773)
+
+ 2. [python-how-can-i-make-the-ansi-escape-codes-to-work-also-in-windows](https://stackoverflow.com/questions/12492810/python-how-can-i-make-the-ansi-escape-codes-to-work-also-in-windows)
+
+* yassine: [writing-cool-cli-menus-with-python](https://yassine.tioual.com/index.php/2017/03/28/writing-cool-cli-menus-with-python/)
+
+* bggofurther: [create-an-interactive-command-line-menu-using-python](https://www.bggofurther.com/2015/01/create-an-interactive-command-line-menu-using-python/)
 
 
 ### Acknowledgement
