@@ -403,8 +403,8 @@ week_day_options ={
 
 
 # Exit program
-def exit():
-    sys.exit()
+#def exit():
+#    sys.exit()
 
 
 # ===========================================
