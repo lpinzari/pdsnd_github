@@ -102,3 +102,5 @@ These are the blogs post that inspired me for this project:
 
 
 ### Acknowledgement
+
+I'd like to thank the Udacity mentors for their precious advice and suggestions.
