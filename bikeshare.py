@@ -52,9 +52,10 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     options = len(month_options)
     print('\nThis report will provide interesting insights about the bikesharing in {}'.format(colorize(city,'green')))
-    print('\nPress enter to continue')
-    input('\n>> ')
-    os.system('clear')
+    #print('\nPress enter to continue')
+    #input('\n>> ')
+    #os.system('clear')
+    key_press()
 
     print('\nThe US bikeshare system has data for {} months between {} and {}'.format(options-1,month_options.get('1'),month_options.get(str(options-1))))
 
@@ -78,9 +79,10 @@ def get_filters():
     else:
         print('\nWe will show some statistics about the bikesharing in {} for {} the months'.format(city,colorize(month,'green')))
 
-    print('\nPress enter to continue')
-    input('\n>> ')
-    os.system('clear')
+    #print('\nPress enter to continue')
+    #input('\n>> ')
+    #os.system('clear')
+    key_press()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     options =len(week_day_options)
@@ -256,9 +258,10 @@ def user_stats(df):
 
     # Display earliest, most recent, and most common year of birth if applicable
     if 'Birth Year' in df.columns:
-        print('\nPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\nPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
         start_time_2 = time.time()
         print('\n\t'+colorize('Birth of year statistics','green'))
         print('-'*40)
@@ -366,6 +369,12 @@ def display_time(seconds):
     return ', '.join(result[:4])
 
 
+def key_press():
+    print('\nPress enter to continue')
+    input('\n>> ')
+    os.system('clear')
+
+
 
 
 # ===========================================
@@ -445,39 +454,45 @@ def main():
         os.system('clear')
         print(colorize(header,'yellow'))
         print(colorize('\tHello, welcome to US bikeshare explorer !','yellow'))
-        print('\nPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\nPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
         city,month,day = get_filters()
 
-        print('\tPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\tPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
 
         df = load_data(city, month, day)
         time_stats(df)
 
-        print('\tPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\tPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
 
         station_stats(df)
 
-        print('\tPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\tPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
 
         trip_duration_stats(df)
 
-        print('\tPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\tPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
 
         user_stats(df)
 
-        print('\tPress enter to continue')
-        input('\n>> ')
-        os.system('clear')
+        #print('\tPress enter to continue')
+        #input('\n>> ')
+        #os.system('clear')
+        key_press()
 
         display_records(df)
 
